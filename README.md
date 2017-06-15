@@ -1,7 +1,8 @@
 # Lyr1cs
 
 App for those having issues with buit-in lyrics lookup in system Music app in iOS 10 or just wanting to use a separate app to read lyrics. The app authomatically dislays lyrics for a current song playing in the Music app. Only suitable for lyrics, that are manually added by user in iTunes or were already attached to a purchased song file.
-
+This is how it looks like:
+![img_0251](https://user-images.githubusercontent.com/5732031/27203637-6d7f6b6a-522f-11e7-9423-2c05f8be1cce.PNG)
 
 ## Getting Started
 
