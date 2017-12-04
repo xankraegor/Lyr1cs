@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         labelsBackgroundView.layer.cornerRadius = 10.0
-        musicPlayer = MPMusicPlayerController.systemMusicPlayer()
+        musicPlayer = MPMusicPlayerController.systemMusicPlayer
         NotificationCenter.default.addObserver(self, selector: #selector(self.playingItemDidChange), name: NSNotification.Name.MPMusicPlayerControllerNowPlayingItemDidChange, object: musicPlayer)
         musicPlayer!.beginGeneratingPlaybackNotifications()
     }
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
 
     // MARK: - Notifications
 
-    func playingItemDidChange(notification: NSNotification) {
+    @objc func playingItemDidChange(notification: NSNotification) {
         nowPlayingSong = musicPlayer?.nowPlayingItem
     }
 
