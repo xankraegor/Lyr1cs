@@ -47,7 +47,7 @@ class ViewController: UIViewController {
 
     // MARK: - Notifications
 
-    @objc func playingItemDidChange(notification: NSNotification) {
+    func playingItemDidChange() {
         nowPlayingSong = musicPlayer?.nowPlayingItem
     }
 
